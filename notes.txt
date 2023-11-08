@@ -1,0 +1,2 @@
+Using the ij tool to inject SQL scripts to the database - 
+open the ij tool and use the following command - "run 'path_toScript.sql';"
