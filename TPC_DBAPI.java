@@ -217,7 +217,7 @@ public class TPC_DBAPI implements TPC_DBInterf {
     public static void initializeSupplier(Connection conn) {
         try {
             System.out.println("Inserting data into supplier table");
-            String insertSQL = "INSERT INTO SUPPLIER VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+            String insertSQL = "INSERT INTO SUPPLIER VALUES (?, ?, ?, ?, ?, ?, ?)";
             PreparedStatement ps = conn.prepareStatement(insertSQL);
             File file = new File("/home/jason/project-2023/data/supplier.tbl");
             FileReader fr = new FileReader(file);
@@ -249,7 +249,7 @@ public class TPC_DBAPI implements TPC_DBInterf {
     public static void initializePartSupp(Connection conn) {
         try {
             System.out.println("Inserting data into partsupp table");
-            String insertSQL = "INSERT INTO PARTSUPP VALUES (?, ?, ?, ?)";
+            String insertSQL = "INSERT INTO PARTSUPP VALUES (?, ?, ?, ?, ?)";
             PreparedStatement ps = conn.prepareStatement(insertSQL);
             File file = new File("/home/jason/project-2023/data/partsupp.tbl");
             FileReader fr = new FileReader(file);
@@ -281,7 +281,7 @@ public class TPC_DBAPI implements TPC_DBInterf {
     public static void initializeCustomer(Connection conn) {
         try {
             System.out.println("Inserting data into customer table");
-            String insertSQL = "INSERT INTO CUSTOMER VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            String insertSQL = "INSERT INTO CUSTOMER VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
             PreparedStatement ps = conn.prepareStatement(insertSQL);
             File file = new File("/home/jason/project-2023/data/customer.tbl");
             FileReader fr = new FileReader(file);
